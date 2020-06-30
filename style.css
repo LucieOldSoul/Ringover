@@ -232,6 +232,52 @@ h3{
     padding-right: 0.7em;
 }
 
-.img-tel{
+
+.container-offre-tel{
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+.div-img-offre-tel{
+    padding: 0;
+}
+.img-offre-tel{
     width: 100%;
+    position: relative;
+    z-index: 0;
+
+}
+
+.p-offre-tel{
+position: absolute;
+z-index: 250 ;
+margin-top: 4em;
+margin-left: 6em;
+font-size: 1.8em;
+}
+
+.cta-offre-tel{
+    position: absolute;
+    z-index: 350 ;
+    margin-top: 11.5em;
+    margin-left: 13.5em;
+    background-color: #29b0bb;
+    padding: 16px 32px;
+    line-height: 1.5;
+    border-radius: 10px;
+    color:#ffffff;
+    font-size: 1.2em;
+}
+
+hr{
+    width: 70%;
+}
+
+.menu-footer{
+    text-align: center;
+}
+
+.coordonnees-footer{
+    text-align: center;
+    font-size: 0.8em;
 }
