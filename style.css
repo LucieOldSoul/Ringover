@@ -104,9 +104,17 @@ img.image-header{
 }
 
 .div-subtitle{
-    margin: 8% 0 10% 0;
+    margin: 8% 0 8% 0;
     text-align: center;
 }
+
+/*SECTION 2*/
+.div-supports-browsers{
+    padding-top: 6em;
+}
+
+
+
 
 
 #section3{
