@@ -1,3 +1,52 @@
+/*bleu caraïbes clair : #74d1d8
+bleu marine : #2d5380
+*/
+
+
+.body-set{
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body{
-    background-color: gray;
+
+
+    background-color: #ffffff;
+}
+
+.navbar{
+    padding: 0 1rem;
+}
+.div-nav{
+    margin: 10px 0;
+}
+
+.ul-nav{
+    margin-left: 8em;
+    color: #2d5380;
+}
+
+.phone{
+    font-size: 80%;
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: #74d1d8;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.div-flag{
+    margin-left: 15px;
+}
+
+.lang-flag{
+    border-radius: 10px;
+}
+
+.btn-connexion{
+    margin-left: 15px;
+}
+
+.btn-essai-gratuit{
+    margin-left: 15px;
 }
