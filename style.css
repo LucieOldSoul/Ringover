@@ -75,9 +75,18 @@ header{
     margin-top: 10%;
 }
 
+#div-title-header{
+    padding-left: 5em;
+    padding-top: 4em;
+}
+
 h3.name-product{
     text-transform: uppercase;
     color: #29b0bb;
+}
+
+#span-title{
+    font-size: 91%;
 }
 
 img.image-header{
