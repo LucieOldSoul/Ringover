@@ -36,7 +36,10 @@ h3{
     color: #2d5380;
 }
 
-
+button:focus{
+    outline: none;
+  }
+  
 .btn-commencer{
     background-color: #29b0bb;
     margin-right: 0;
@@ -194,6 +197,10 @@ h2{
     font-weight: bolder;
 }
 
+.text-color{
+   color: #2EC6D1;
+}
+
 
 /*SECTION 3 - PRODUCTIVITE*/
 
@@ -201,14 +208,22 @@ h2{
     margin-top: 3%;
 }
 
+.row-productivite {
+    display: flex;
+}
 .img-multidevices{
     width: 100%;
     border-radius: 5px;
 }
 
+.div-img-productivite{
+    order: 0;
+}
+
 .div-productivite{
     padding-top: 7em;
     margin-bottom: 10%;
+    order: 1;
 }
 
 
@@ -466,8 +481,3 @@ footer > div:last-child > div {
 }
 
 
-/*RESPONSIVE*/
-
-.navbar-toggler-icon{
-    color: red;
-}

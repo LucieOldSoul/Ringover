@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" crossorigin="anonymous"></script> 
 
     <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
 
     <link rel="canonical" href="https://www.ringover.com/fr/visioconference">
 </head>
@@ -32,10 +34,18 @@
                 <!--LOGO RINGOVER-->
                 <a class="navbar-brand" href="#"><img src="images/logo-ringover-full-line.svg" width="170"
                         alt="logo Ringover"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+
+                        <div class="div-flag-mobile">
+                            <img class="lang-flag" src="images/french-flag.svg">
+    
+                        </div>      
+
+       <!--MENU HAMBURGER-->                 
+                <button class="navbar-toggler mobile-bar navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="animated-icon3"><span class="animated-icon1"></span><span class="animated-icon2"></span><span class="animated-icon3"></span></div>
                 </button>
+<!--END MENU HAMBURGER-->                 
                 <!--ITEMS MENU-->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ul-nav">
@@ -77,13 +87,16 @@
                     <a href="https://myringover.com/" class="btn-connexion">
                         Connexion
                     </a>
+                    <div class="div-btn-essai">
                     <a href="https://www.ringover.com/fr/inscription" class="btn-essai-gratuit">
                         Essai gratuit
                     </a>
+                </div>
                     <!--END ITEMS MENU-->
                 </div>
             </nav>
         </div>
+ 
         <!--END NAVBAR-->
     </header>
     <!--END HEADER-->
@@ -105,6 +118,8 @@
                 <img class="image-header" src="images/header-ringover3.png" alt="header videoconférence>">
             </div>
         </div>
+
+        
 
         <!--INTERTITRE 1-->
         <div class="container">
@@ -141,8 +156,8 @@
         <!--SECTION 3-->
 
         <div id="section3" class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
+            <div class="row row-productivite">
+                <div class="col-xs-12 col-md-6 div-img-productivite">
                     <img class="img-screensharing" src="images/screensharing3.png" alt="screensharing">
                 </div>
                 <div class="col-xs-12 col-md-6 div-productivite">
@@ -164,7 +179,7 @@
 
         <div class="container">
             <div class="div-intertitre scrollAnim anim">
-            <h2 class="intertitre2">Solution de visioconférences gratuite.<br> Sans inscription ni téléchargement.
+            <h2 class="subtitle intertitre2"><span>Solution de visioconférences gratuite.</span><br> Sans inscription ni téléchargement.
             </h2>
             </div>
         </div>
@@ -179,7 +194,7 @@
                         <img class="icone-free" src="images/GRATUIT.png" alt="">
                     </div>
                     <h3 class="title-service-gratuit">Gratuit et illimité</h3>
-                    <p class="texte-gratuit">Meet by Ringover est <span class="text-bold">disponible gratuitement sans
+                    <p class="texte-gratuit">Meet by Ringover est <span class="text-bold text-color">disponible gratuitement sans
                             aucune limitation </span>sur la durée de vos visioconférences et le nombre de participants.
                     </p>
                 </div>
@@ -376,6 +391,28 @@
         });
 
     </script>
+
+<!--MENU MOBILE-->    
+
+<script>
+    $(document).ready(function () {
+
+$('.first-button').on('click', function () {
+
+  $('.animated-icon1').toggleClass('open');
+});
+$('.second-button').on('click', function () {
+
+  $('.animated-icon2').toggleClass('open');
+});
+$('.third-button').on('click', function () {
+
+  $('.animated-icon3').toggleClass('open');
+});
+});
+</script>
+
+    
 
 </body>
 
