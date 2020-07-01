@@ -1,14 +1,10 @@
 /*bleu caraïbes clair : #74d1d8
+bleu caraïbes medium : #2EC6D1
 bleu caraïbes foncé : #29b0bb
 bleu marine : #2d5380
 */
 
 /*MAIN*/
-
-.body-set{
-    overflow-x: hidden;
-    width: 100%;
-}
 
 body{
     background-color: #ffffff;
@@ -16,6 +12,8 @@ body{
     margin: 0;
     border: 0;
     vertical-align: baseline;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a{
@@ -24,27 +22,56 @@ a{
 
 a:hover{
     text-decoration: none;
-    color: #36edfa;
-    font-size: 1.1em;
 }
 
 header{
     background-color: #ffffff;
 }
 
+h1{
+    color: #2d5380;
+} 
+
+h3{
+    color: #2d5380;
+}
+
+
+.btn-commencer{
+    background-color: #29b0bb;
+    margin-right: 0;
+    padding: 16px 32px;
+    line-height: 1.5;
+    border-radius: 10px;
+    color:#ffffff;
+}
+
+a.btn-commencer:hover{
+    transition: .2s;
+    background-color: #74d1d8;
+    color: #ffffff;
+}
+
+/*END MAIN*/
+
 /*NAVBAR*/
 
-.navbar{
-    padding: 0 1rem;
-}
 .div-nav{
-    margin: 10px 0;
     padding: 10px 0;
 }
 
 .ul-nav{
     margin-left: 8em;
+}
+
+nav li a{
     color: #2d5380;
+    font-weight: bold;
+    padding: 0 3% 0 3%;
+}
+
+nav li a:hover{
+    color: #74d1d8;
 }
 
 .phone{
@@ -61,18 +88,40 @@ header{
 }
 
 .lang-flag{
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
-.btn-connexion{
+a.btn-connexion{
     margin-left: 15px;
+    color: #2d5380;
+    font-weight: bold;
+
+}
+
+ a.btn-connexion:hover{
+    color:#74d1d8;
 }
 
 .btn-essai-gratuit{
-    margin-left: 15px;
+    background-image: linear-gradient(99deg, rgba(255,255,255,0), #ff8954); 
+    background-color: #ffcf4f;
+    padding: 10px 10px;
+    margin-left: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+a.btn-essai-gratuit:hover{
+    transition: .2s;
+    background-image: linear-gradient(99deg, rgba(255,255,255,0), #ff8954); 
+    background-color: #fd6b31;
+    color: #ffffff;
 }
 
-/*SECTION 1*/
+
+/*SECTION 1 PRESENTATION*/
 
 #section1{
     margin-top: 5%;
@@ -83,15 +132,12 @@ header{
     padding-top: 4em;
 }
 
-h3.name-product{
+h3.name-solution{
     text-transform: uppercase;
     color: #29b0bb;
 }
 
-h1{
-    color: #2d5380;
-}
-#span-title{
+#span-name-solution{
     font-size: 91%;
 }
 
@@ -100,32 +146,42 @@ img.image-header{
     border-radius: 5px;
 }
 
-.btn-commencer{
-    background-color: #29b0bb;
-    margin-right: 0;
-    padding: 16px 32px;
-    line-height: 1.5;
-    border-radius: 10px;
-    color:#ffffff;
-}
+/*STYLE INTERTITRES*/
 
-.div-subtitle{
-    margin: 8% 0 4% 0;
+.div-intertitre{
+    margin: 4% 0 4% 0;
     text-align: center;
-}
-
-.div-subtitle-2{
-    margin: 8% 0 2% 0;
-    text-align: center;
-}
-
-/*SECTION 2*/
-.div-supports-browsers{
-    padding-top: 6em;
 }
 
 h2{
-    color: #2d5380;
+    color: #29b0bb;
+}
+
+.scrollAnim{
+	opacity: 0;
+	transition: 0.8s;
+
+}
+.scrollAnim.anim{
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+
+
+
+.subtitle{
+    margin-bottom: 1.3em;
+}
+
+.intertitre2{
+    margin-bottom: 2.2em;
+}
+
+/*SECTION 2 - TOUS SUPPORTS*/
+
+.div-supports-browsers{
+    padding-top: 6em;
 }
 
 .text-section{
@@ -138,6 +194,9 @@ h2{
     font-weight: bolder;
 }
 
+
+/*SECTION 3 - PRODUCTIVITE*/
+
 #section3{
     margin-top: 3%;
 }
@@ -149,68 +208,38 @@ h2{
 
 .div-productivite{
     padding-top: 7em;
+    margin-bottom: 10%;
 }
 
 
-#section4{
-    margin-top: 10%;
-}
+/*SECTION 4 - SERVICE GRATUIT*/
 
-.subtitle{
-    margin-bottom: 1.3em;
-}
-
-.subtitle-part-4{
-    margin-bottom: 2.2em;
-}
-
-/*.div-gratuit{
-   
-    background: no-repeat center url("images/shape1.png");
-}*/
 .div-icone-free{
-text-align: center;
-}
-
-.icone-free{
-    width: 50%;
-}
-
-.title-service-gratuit{
     text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.texte-gratuit{
+    }
     
-    font-size: 1.3em;
-    text-align: justify;
-}
+    .icone-free{
+        width: 50%;
+    }
+    
+    .title-service-gratuit{
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    
+    .texte-gratuit{
+        
+        font-size: 1.3em;
+        text-align: justify;
+    }
+    
+    .img-free{
+        width: 100%;
+    }
 
+    
+/*SECTION 5 - 2 BLOCS*/
 
-
-.img-screensharing{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.img-center {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-.img-signing-free{
-    width: 60%;
-}
-
-.img-free{
-    width: 100%;
-}
-
-
-h3{
-    color: #2d5380;
-}
 .img-vignettes{
     width: 30%;
 }
@@ -233,6 +262,28 @@ h3{
 }
 
 
+
+/*SECTION 5 - PRET A VOUS LANCER ?*/
+
+
+.img-screensharing{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.img-center {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.img-signing-free{
+    width: 60%;
+}
+
+
+/*BANNER OFFRE TELEPHONIE*/
+
+
 .container-offre-tel{
     margin-top: 10em;
     margin-bottom: 5em;
@@ -248,36 +299,175 @@ h3{
 
 }
 
+.div-p-offre{
+    height: 100%;
+    position: absolute;
+z-index: 200 ;
+
+}
+
+
+.icon-idea{
+    width: 15%;
+    margin-bottom: 0.3em;
+}
+
 .p-offre-tel{
-position: absolute;
-z-index: 250 ;
-margin-top: 4em;
+
+margin-top: 2em;
 margin-left: 6em;
 font-size: 1.8em;
+text-align: center;
+color: #2d5380;
 }
 
 .cta-offre-tel{
     position: absolute;
-    z-index: 350 ;
-    margin-top: 11.5em;
-    margin-left: 13.5em;
-    background-color: #29b0bb;
+    z-index: 200 ;
+    margin-left: -5em;
+    margin-top: 1em;
     padding: 16px 32px;
     line-height: 1.5;
-    border-radius: 10px;
+    border-radius: 7px;
     color:#ffffff;
-    font-size: 1.2em;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #ffcf4f;
+    background-image: linear-gradient(99deg,rgba(255,255,255,0),#ff8954);
+    transition: .2s; 
 }
 
-hr{
-    width: 70%;
+
+a.cta-offre-tel:hover{
+    transition: .2s;
+    background-image: linear-gradient(99deg, rgba(255,255,255,0), #ff8954); 
+    background-color: #fd6b31;
+    color: #ffffff;
 }
 
-.menu-footer{
+
+/*FOOTER*/
+
+.container-footer {
+    position: relative;}
+.container-footer .legal-banner {
+    margin-bottom: 50px;
+} 
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(185, 185, 185, 0.3);
+    padding: 50px 0 100px 0;
+    justify-content: space-between;
+    color: #2D5380;
+    position: relative;
+}
+
+
+footer h3 {
+
+    font-size: 16px;
+    margin: 20px 0 10px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+footer a {
+   color: #2d5380;
+}
+
+footer a:hover{
+    text-decoration:#2EC6D1;
+}
+
+
+footer > div {
+    margin-right: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+footer > div:first-child {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    /* align-items: center; */
+    margin: 0;
+    font-size: 17px;
+}
+
+footer > div:first-child > div:first-child {
+    min-width: 175px;
+}
+
+footer >div:first-child > div {
+    display: inline;
+}
+
+footer >div:first-child > div >span {
+    vertical-align: middle;
+}
+
+footer > div:first-child img, .footer-lang img {
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+}
+
+footer .flag-number, .footer-lang > div img:first-child {
+    vertical-align: middle;
+    width: 25px;
+    height: 17px;
+    border-radius: 8px;
+    margin-right: 22px;
+}
+
+
+.footer-lang {
+    min-width: 175px;
+    cursor: pointer;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
+footer > div:last-child #phonenumbers {
+    position: relative;
+    flex-direction: column;
+}
+
+footer > div:last-child > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.legal-banner p {
+    width: 100%;
+    font-size: .8rem;
+    line-height: 1.5;
     text-align: center;
 }
 
-.coordonnees-footer{
-    text-align: center;
-    font-size: 0.8em;
+
+/*RESPONSIVE*/
+
+.navbar-toggler-icon{
+    color: red;
 }
